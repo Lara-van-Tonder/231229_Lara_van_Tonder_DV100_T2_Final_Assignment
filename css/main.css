@@ -163,6 +163,7 @@ header{
 
 .about-us-text p{
     font-family: 'Roboto', sans-serif;
+    font-weight: bold;
     color: #000000;
     text-align: justify;
 }
@@ -353,3 +354,154 @@ footer p{
     text-align: center;
     color: #A00A16;
 }
+
+
+
+
+
+
+
+
+
+
+/*PAGE 2: Build A Sub*/
+
+.build-a-sub{
+    width: 100%;
+    height: 1100px;
+    background-color: #A00A16;
+    padding-top: 50px;
+}
+
+.order-form{
+    color: white;
+}
+
+form{
+    width: 80%;
+    height: 1000px;
+    background-color: #E7D5C7;
+    border-radius: 5px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.order-form h2{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    color: #A00A16;
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.input-elm{
+    width: 60%;
+    height: 40px;
+    background-color: #98C6DD;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: white;
+    border: 3px solid #1A4687;
+    border-radius: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+select{
+    width: 60%;
+    height: 40px;
+    background-color: #98C6DD;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: white;
+    border: 3px solid #1A4687;
+    border-radius: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+textarea{
+    width: 60%;
+    height: 100px;
+    background-color: #98C6DD;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: white;
+    border: 3px solid #1A4687;
+    border-radius: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.form-buttons{
+    width: 80%;
+    height: 60px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.form-buttons ul{
+    list-style: none;
+}
+
+.form-buttons li{
+    float: left;
+    margin-left: 10%;
+}
+
+button{
+    width: 250px;
+    height: 60px;
+    background-color: #98C6DD;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1A4687;
+    border: 3px solid #1A4687;
+    border-radius: 25px;
+}
+
+button:hover{
+    background-color: #E7D5C7;
+}
+
+
+
+
+
+
+
+
+
+
+/*PAGE 3: Checkout*/
+
+.checkout{
+    width: 100%;
+    height: 700px;
+    background-color: #E7D5C7;
+}
+
+.checkout h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: #1A4687;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
