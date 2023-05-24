@@ -1,25 +1,67 @@
+/*
+Fonts:
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+Color Codes:
+Red #A00A16
+Dark Blue #1A4687
+Light Blue #98C6DD
+Off White #E7D5C7
+Black #000000
+*/
+
+
 /*Navigation*/
 nav{
     width: 100%;
     height: 100px;
-    background-color: red;
+    background-color: #98C6DD;
+    padding-left: 10%;
     padding-top: 20px;
 }
 
 .nav-con{
-    width: 70%;
-    height: 50px;
-    background-color: green;
-    margin-left: 20%;
-    margin-right: 10%;
-    padding-top: 10px;
+    width: 100%;
+    height: 60px;
 }
 
-.nav-con p{
-    text-align: center;
+.logo{
+    width: 200px;
+    height: 60px;
+    background-image: url('/assets/brandImages/logo.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.nav-con ul{
+    width: 630%;
+    height: 60px;
+    list-style: none;
+    padding-left: 20%;
+    margin-left: 100%;
+}
+
+.nav-con li{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: #1A4687;
     float: left;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-top: 10px;
+    padding-left: 4.5%;
+    padding-right: 4.5%;
+}
+
+.button-search-p1{
+    width: 250px;
+    height: 40px;
+    background-color: #98C6DD;
+    color: white;
+    border: 3px solid #1A4687;
+    border-radius: 25px;
+    padding-left: 15px;
+    margin-left: 150%;
 }
 
 
@@ -29,8 +71,66 @@ nav{
 /*Header*/
 header{
     width: 100%;
+    height: 880px;
+    background-image: url("../assets/homePageImages/headerImage.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-top: 200px;
+}
+
+.welcome{
+    width: 80%;
     height: 500px;
-    background-color: blue;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.welcome h1{
+    font-size: 150px;
+    font-weight: bold;
+    color: #A00A16;
+}
+
+.welcome h3{
+    font-size: 50px;
+    font-weight: bold;
+    color: #1A4687;
+}
+
+.extra-nav-buttons{
+    width: 100%;
+    height: 100px;
+    margin-top: 110px;
+}
+
+.extra-nav-buttons ul{
+    list-style: none;
+}
+
+.extra-nav-buttons li{
+    float: left;
+    border: 3px solid #1A4687;
+    background-color: #98C6DD;
+}
+
+.nav-btn{
+    width: 500px;
+    height: 100px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    color: #1A4687;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 26px;
+    margin-left: 150px;
+}
+
+.extra-nav-buttons li:hover{
+    cursor: pointer;
+    background-color: #E7D5C7;
+    color: #1A4687;
 }
 
 
@@ -40,8 +140,31 @@ header{
 /*About Us*/
 .about-us{
     width: 100%;
-    height: 500px;
-    background-color: cyan;
+    height: 400px;
+    background-color: #98C6DD;
+}
+
+.about-us-text{
+    width: 80%;
+    height: 300px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.about-us-text h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: #1A4687;
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.about-us-text p{
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    text-align: justify;
 }
 
 
@@ -51,8 +174,124 @@ header{
 /*Subs of the Month*/
 .subs-of-the-month{
     width: 100%;
-    height: 500px;
-    background-color: magenta;
+    height: 800px;
+    background-color: #E7D5C7;
+}
+
+.subs-of-the-month-text{
+    width: 80%;
+    height: 140px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.subs-of-the-month-text h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: #A00A16;
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.subs-of-the-month-layout{
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.col-3{
+    padding-left: 2.8%;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+.overlay{
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.25);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: white;
+    padding-top: 120px;
+    opacity: 0;
+}
+
+.overlay:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.overlay h6{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+
+.sub-1{
+    width: 300px;
+    height: 300px;
+    background-image: url("/assets/sandwichImages/subSandwichNOBG.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.sub-2{
+    width: 300px;
+    height: 300px;
+    background-image: url("/assets/sandwichImages/subSandwichNOBG.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.sub-3{
+    width: 300px;
+    height: 300px;
+    background-image: url("/assets/sandwichImages/subSandwichNOBG.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.sub-4{
+    width: 300px;
+    height: 300px;
+    background-image: url("/assets/sandwichImages/subSandwichNOBG.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.sub-5{
+    width: 300px;
+    height: 300px;
+    background-image: url("/assets/sandwichImages/subSandwichNOBG.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.sub-6{
+    width: 300px;
+    height: 300px;
+    background-image: url("/assets/sandwichImages/subSandwichNOBG.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.sub-7{
+    width: 300px;
+    height: 300px;
+    background-image: url("/assets/sandwichImages/subSandwichNOBG.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.sub-8{
+    width: 300px;
+    height: 300px;
+    background-image: url("/assets/sandwichImages/subSandwichNOBG.png");
+    background-position: center;
+    background-size: cover;
 }
 
 
@@ -62,6 +301,55 @@ header{
 /*Footer*/
 footer{
     width: 100%;
-    height: 250px;
-    background-color: yellow;
+    height: 175px;
+    background-color: #98C6DD;
+    padding-top: 25px;
+}
+
+.social-media{
+    width: 375px;
+    height: 75px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.facebook{
+    width: 75px;
+    height: 75px;
+    background-image: url("/assets/socialMedia/facebook.png");
+    background-size: cover;
+    background-position: center;
+    float: left;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.instagram{
+    width: 75px;
+    height: 75px;
+    background-image: url("/assets/socialMedia/instagram.png");
+    background-size: cover;
+    background-position: center;
+    float: left;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.twitter{
+    width: 75px;
+    height: 75px;
+    background-image: url("/assets/socialMedia/twitter.png");
+    background-size: cover;
+    background-position: center;
+    float: left;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+footer p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: #A00A16;
 }
