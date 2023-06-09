@@ -20,9 +20,10 @@
 
     <!--Internal Documents-->
     <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/checkout.js"></script>
 </head>
 
-<body>
+<body onload="displayCheck()">
     
     <!--Navigation-->
     <nav>
@@ -43,7 +44,26 @@
 
 
     <section class="checkout">
-        <h2>CHECKOUT</h2>
+        <div class="checkout-form">
+            <h2>CHECKOUT</h2>
+            <div class="checkout-left">
+                <h1>Your Order</h1>
+                <div id="checkoutOrder"></div>
+            </div>
+    
+            <div class="checkout-right">
+                <h1>Your Total</h1>
+                <h1 id="totalOut" class="total">R0.00</h1>
+        
+                <h4>Enter a Promo Code</h4>
+                <input type="text" class="promo-code" placeholder="#0000" id="promo">
+                <div class="checkout-btns">
+                    <button class="discount-btn" type="button" onclick="">ADD DISCOUNT</button>  
+                    <button class="payment-btn" type="button" onclick="resetReturn">MAKE PAYMENT</button> 
+                </div>
+                 
+            </div>
+        </div>
     </section>
 
 

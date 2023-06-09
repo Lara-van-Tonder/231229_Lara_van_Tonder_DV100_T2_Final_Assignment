@@ -20,6 +20,7 @@
 
     <!--Internal Documents-->
     <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/index.js"></script>
 </head>
 
 <body>
@@ -44,158 +45,272 @@
 
     <section class="build-a-sub">
         <div class="order-form">
-            <form>
+
+            <form id="buildASub" onchange="realTimeCost()">
                 <h2>BUILD A SUB</h2>
-                <input class="input-elm" type="text" placeholder="NAME AND SURNAME" required>
-                <input class="input-elm" type="text" placeholder="EMAIL" required>
-                <input class="input-elm" type="text" placeholder="GIVE YOUR SUB A SUPER COOL AND UNIQUE NAME (you can even name it Steve)">
+                <div class="left">
+                    <input class="input-elm" type="text" placeholder="NAME AND SURNAME" id="nameAndSurname" required>
+                    <input class="input-elm" type="text" placeholder="EMAIL" id="email" required>
+                    <input class="input-elm" type="text" placeholder="GIVE YOUR SUB A SUPER COOL AND UNIQUE NAME (you can even name it Steve)" id="subName" required>
+                </div>
+                
 
-                <select> <!--Remember to add values for cost!-->
-                    <option>CHOOSE YOUR BREAD</option>
-                    <option>White</option>
-                    <option>Wholewheat</option>
-                    <option>Gluten Free</option>
-                </select>
+                <div class="right">
+                    <div class="real-time-cost" id="realTimeCost">R0.00</div>
+                </div>
 
-                <select> <!--Remember to add values for cost!-->
-                    <option>TOPPING 1</option>
-                    <option>Beef</option>
-                    <option>Chicken</option>
-                    <option>Ham</option>
-                    <option>Bacon</option>
-                    <option>Meatballs (Beef)</option>
-                    <option>Hard Boiled Egg</option>
-                    <option>Cheddar Cheese</option>
-                    <option>Mozzarella Cheese</option>
-                    <option>Gouda Cheese</option>
-                    <option>Blue Cheese</option>
-                    <option>Feta Cheese</option>
-                    <option>Tomato</option>
-                    <option>Lettuce</option>
-                    <option>Red Onion</option>
-                    <option>Guacamole</option>
-                    <option>Pickles</option>
-                    <option>Mushrooms</option>
-                    <option>Caramelized Onion</option>
-                    <option>Olive</option>
-                    <option>Jalapenos</option>
-                </select>
+                
 
-                <select> <!--Remember to add values for cost!-->
-                    <option>TOPPING 2</option>
-                    <option>Beef</option>
-                    <option>Chicken</option>
-                    <option>Ham</option>
-                    <option>Bacon</option>
-                    <option>Meatballs (Beef)</option>
-                    <option>Hard Boiled Egg</option>
-                    <option>Cheddar Cheese</option>
-                    <option>Mozzarella Cheese</option>
-                    <option>Gouda Cheese</option>
-                    <option>Blue Cheese</option>
-                    <option>Feta Cheese</option>
-                    <option>Tomato</option>
-                    <option>Lettuce</option>
-                    <option>Red Onion</option>
-                    <option>Guacamole</option>
-                    <option>Pickles</option>
-                    <option>Mushrooms</option>
-                    <option>Caramelized Onion</option>
-                    <option>Olive</option>
-                    <option>Jalapenos</option>
-                </select>
 
-                <select> <!--Remember to add values for cost!-->
-                    <option>TOPPING 3</option>
-                    <option>Beef</option>
-                    <option>Chicken</option>
-                    <option>Ham</option>
-                    <option>Bacon</option>
-                    <option>Meatballs (Beef)</option>
-                    <option>Hard Boiled Egg</option>
-                    <option>Cheddar Cheese</option>
-                    <option>Mozzarella Cheese</option>
-                    <option>Gouda Cheese</option>
-                    <option>Blue Cheese</option>
-                    <option>Feta Cheese</option>
-                    <option>Tomato</option>
-                    <option>Lettuce</option>
-                    <option>Red Onion</option>
-                    <option>Guacamole</option>
-                    <option>Pickles</option>
-                    <option>Mushrooms</option>
-                    <option>Caramelized Onion</option>
-                    <option>Olive</option>
-                    <option>Jalapenos</option>
-                </select>
 
-                <select> <!--Remember to add values for cost!-->
-                    <option>TOPPING 4</option>
-                    <option>Beef</option>
-                    <option>Chicken</option>
-                    <option>Ham</option>
-                    <option>Bacon</option>
-                    <option>Meatballs (Beef)</option>
-                    <option>Hard Boiled Egg</option>
-                    <option>Cheddar Cheese</option>
-                    <option>Mozzarella Cheese</option>
-                    <option>Gouda Cheese</option>
-                    <option>Blue Cheese</option>
-                    <option>Feta Cheese</option>
-                    <option>Tomato</option>
-                    <option>Lettuce</option>
-                    <option>Red Onion</option>
-                    <option>Guacamole</option>
-                    <option>Pickles</option>
-                    <option>Mushrooms</option>
-                    <option>Caramelized Onion</option>
-                    <option>Olive</option>
-                    <option>Jalapenos</option>
-                </select>
+                <div class="bread-options">
+                    <h3>Choose Your Bread</h3>
 
-                <select> <!--Remember to add values for cost!-->
-                    <option>TOPPING 5</option>
-                    <option>Beef</option>
-                    <option>Chicken</option>
-                    <option>Ham</option>
-                    <option>Bacon</option>
-                    <option>Meatballs (Beef)</option>
-                    <option>Hard Boiled Egg</option>
-                    <option>Cheddar Cheese</option>
-                    <option>Mozzarella Cheese</option>
-                    <option>Gouda Cheese</option>
-                    <option>Blue Cheese</option>
-                    <option>Feta Cheese</option>
-                    <option>Tomato</option>
-                    <option>Lettuce</option>
-                    <option>Red Onion</option>
-                    <option>Guacamole</option>
-                    <option>Pickles</option>
-                    <option>Mushrooms</option>
-                    <option>Caramelized Onion</option>
-                    <option>Olive</option>
-                    <option>Jalapenos</option>
-                </select>
+                    <div class="bread-checked">
+                        <input class="form-check-input" type="radio" name="breadRadio" id="standard" data-cost="10" value="White" checked>
+                        <label class="form-check-label" for="white">
+                            White
+                        </label>
+                    </div>
+            
+                    <div class="bread-check">
+                        <input class="form-check-input" type="radio" name="breadRadio" id="deep" data-cost="15" value="Wholewheat">
+                        <label class="form-check-label" for="wholewheat">
+                            Wholewheat
+                        </label>
+                    </div>
+            
+                    <div class="bread-check">
+                        <input class="form-check-input" type="radio" name="breadRadio" id="thin" data-cost="20" value="Gluten Free">
+                        <label class="form-check-label" for="glutenFree">
+                            Gluten Free
+                        </label>
+                    </div>
+                </div>
 
-                <select> <!--Remember to add values for cost!-->
-                    <option>CHOOSE YOUR SAUCE</option>
-                    <option>SUPER SUBS SECRET SAUCE (try saying that three times fast)</option>
-                    <option>Ketchup</option>
-                    <option>Mayonnaise</option>
-                    <option>Barbecue</option>
-                    <option>1000 Island Dressing</option>
-                </select>
 
-                <textarea class="input-text" rows="10" placeholder="ADDITIONAL ORDER NOTES"></textarea>
 
-                <div class="form-buttons">
-                    <ul>
-                        <li><button type="build-another-btn"><strong>BUILD ANOTHER SUB</strong></button></li>
-                        <li><button type="place-order-btn"><strong>PLACE ORDER</strong></button></li>
-                    </ul>
-                </div> 
+
+
+                <div class="toppings">
+                    <h3>Choose Your Toppings</h3>
+
+                    <div class="top-check">
+                        <input class="form-check-input" name="toppings" type="checkbox" value="beef" id="beef" data-cost="20">
+                        <label class="form-check-label" for="beef">
+                            Beef
+                        </label>
+                    </div>
+
+                    <div class="top-check">
+                        <input class="form-check-input" name="toppings" type="checkbox" value="chicken" id="chicken" data-cost="15">
+                        <label class="form-check-label" for="chicken">
+                            Chicken
+                        </label>
+                    </div>
+
+                    <div class="top-check">
+                        <input class="form-check-input" name="toppings" type="checkbox" value="ham" id="ham" data-cost="10">
+                        <label class="form-check-label" for="ham">
+                            Ham
+                        </label>
+                    </div>
+
+                    <div class="top-check">
+                        <input class="form-check-input" name="toppings" type="checkbox" value="bacon" id="bacon" data-cost="15">
+                        <label class="form-check-label" for="bacon">
+                            Bacon
+                        </label>
+                    </div>
+
+                    <div class="top-check">
+                        <input class="form-check-input" name="toppings" type="checkbox" value="meatballs" id="meatballs" data-cost="20">
+                        <label class="form-check-label" for="meatballs">
+                            Meatballs (Beef)
+                        </label>
+                    </div>
+
+                    <div class="top-check">
+                        <input class="form-check-input" name="toppings" type="checkbox" value="egg" id="egg" data-cost="10">
+                        <label class="form-check-label" for="egg">
+                            Hard Boiled Egg
+                        </label>
+                    </div>
+
+                    <div class="top-check">
+                        <input class="form-check-input" name="toppings" type="checkbox" value="cheddar" id="cheddar" data-cost="8">
+                        <label class="form-check-label" for="cheddar">
+                            Cheddar Cheese
+                        </label>
+                    </div>
+
+                    <div class="top-check">
+                        <input class="form-check-input" name="toppings" type="checkbox" value="mozzarella" id="mozzarella" data-cost="9">
+                        <label class="form-check-label" for="mozzarella">
+                            Mozzarella Cheese
+                        </label>
+                    </div>
+
+                    <div class="top-check">
+                        <input class="form-check-input" name="toppings" type="checkbox" value="gouda" id="gouda" data-cost="10">
+                        <label class="form-check-label" for="gouda">
+                            Gouda Cheese
+                        </label>
+                    </div>
+
+                    <div class="top-check">
+                        <input class="form-check-input" name="toppings" type="checkbox" value="blueCheese" id="blueCheese" data-cost="12">
+                        <label class="form-check-label" for="blueCheese">
+                            Blue Cheese
+                        </label>
+                    </div>
+
+                    <div class="top-check">
+                        <input class="form-check-input" name="toppings" type="checkbox" value="feta" id="feta" data-cost="10">
+                        <label class="form-check-label" for="feta">
+                            Feta Cheese
+                        </label>
+                    </div>
+
+                    <div class="top-check">
+                        <input class="form-check-input" name="toppings" type="checkbox" value="tomato" id="tomato" data-cost="7">
+                        <label class="form-check-label" for="tomato">
+                            Tomato
+                        </label>
+                    </div>
+
+                    <div class="top-check">
+                        <input class="form-check-input" name="toppings" type="checkbox" value="lettuce" id="lettuce" data-cost="6">
+                        <label class="form-check-label" for="lettuce">
+                            Lettuce
+                        </label>
+                    </div>
+
+                    <div class="top-check">
+                        <input class="form-check-input" name="toppings" type="checkbox" value="redOnion" id="redOnion" data-cost="6">
+                        <label class="form-check-label" for="redOnion">
+                            Red Onion
+                        </label>
+                    </div>
+
+                    <div class="top-check">
+                        <input class="form-check-input" name="toppings" type="checkbox" value="guacamole" id="guacamole" data-cost="10">
+                        <label class="form-check-label" for="guacamole">
+                            Guacamole
+                        </label>
+                    </div>
+
+                    <div class="top-check">
+                        <input class="form-check-input" name="toppings" type="checkbox" value="pickles" id="pickles" data-cost="5">
+                        <label class="form-check-label" for="pickles">
+                            Pickles
+                        </label>
+                    </div>
+
+                    <div class="top-check">
+                        <input class="form-check-input" name="toppings" type="checkbox" value="mushrooms" id="mushrooms" data-cost="8">
+                        <label class="form-check-label" for="mushrooms">
+                            Mushrooms
+                        </label>
+                    </div>
+
+                    <div class="top-check">
+                        <input class="form-check-input" name="toppings" type="checkbox" value="caramelOnion" id="caramelOnion" data-cost="10">
+                        <label class="form-check-label" for="caramelOnion">
+                            Caramelized Onion
+                        </label>
+                    </div>
+
+                    <div class="top-check">
+                        <input class="form-check-input" name="toppings" type="checkbox" value="olive" id="olive" data-cost="8">
+                        <label class="form-check-label" for="olive">
+                            Olive
+                        </label>
+                    </div>
+
+                    <div class="top-check">
+                        <input class="form-check-input" name="toppings" type="checkbox" value="jalapenos" id="jalapenos" data-cost="8">
+                        <label class="form-check-label" for="jalapenos">
+                            Jalapenos
+                        </label>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="sauces">
+                    <h3>Choose Your Sauce</h3>
+
+                    <div class="sauce-check">
+                        <input class="form-check-input" name="sauces" type="checkbox" value="secretSauce" id="secretSauce" data-cost="5">
+                        <label class="form-check-label" for="secretSauce">
+                            SUPER SUBS SECRET SAUCE (try saying that three times fast)
+                        </label>
+                    </div>
+
+                    <div class="sauce-check">
+                        <input class="form-check-input" name="sauces" type="checkbox" value="ketchup" id="ketchup" data-cost="5">
+                        <label class="form-check-label" for="ketchup">
+                            Ketchup
+                        </label>
+                    </div>
+
+                    <div class="sauce-check">
+                        <input class="form-check-input" name="sauces" type="checkbox" value="mayonnaise" id="mayonnaise" data-cost="5">
+                        <label class="form-check-label" for="mayonnaise">
+                            Mayonnaise
+                        </label>
+                    </div>
+
+                    <div class="sauce-check">
+                        <input class="form-check-input" name="sauces" type="checkbox" value="barbecue" id="barbecue" data-cost="5">
+                        <label class="form-check-label" for="barbecue">
+                            Barbecue
+                        </label>
+                    </div>
+
+                    <div class="sauce-check">
+                        <input class="form-check-input" name="sauces" type="checkbox" value="island" id="island" data-cost="5">
+                        <label class="form-check-label" for="island">
+                            1000 Island Dressing
+                        </label>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+                <!-- <textarea class="input-text" rows="10" placeholder="ADDITIONAL ORDER NOTES"></textarea> -->
+
+                
+                <button class="build-btn" type="build-btn" onclick="makeSub(); displayOrder()"><strong>BUILD MY SUB</strong></button>
             </form>
+
+
+
+
+
+            <div class="output">
+                <div class="outHeader">
+                    <h3>Your Current Order:</h3>
+                    <div class="totalOrder"><h3 id="orderTotal">R0.00</h3></div>
+                </div>
+                <button class="checkout-btn" type="checkout-btn" onclick="checkOut()"><strong>CHECKOUT</strong></button>
+            </div>
+            
         </div>
+
+
+
+
+
+        
+
     </section>
 
 

@@ -368,9 +368,10 @@ footer p{
 
 .build-a-sub{
     width: 100%;
-    height: 1100px;
+    height: auto;
     background-color: #A00A16;
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .order-form{
@@ -379,11 +380,13 @@ footer p{
 
 form{
     width: 80%;
-    height: 1000px;
+    height: 760px;
     background-color: #E7D5C7;
     border-radius: 5px;
     margin-left: 10%;
     margin-right: 10%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
 }
 
 .order-form h2{
@@ -396,86 +399,142 @@ form{
     padding-bottom: 45px;
 }
 
-.input-elm{
+.left{
     width: 60%;
-    height: 40px;
-    background-color: #98C6DD;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    color: white;
-    border: 3px solid #1A4687;
-    border-radius: 5px;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-select{
-    width: 60%;
-    height: 40px;
-    background-color: #98C6DD;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    color: white;
-    border: 3px solid #1A4687;
-    border-radius: 5px;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-textarea{
-    width: 60%;
-    height: 100px;
-    background-color: #98C6DD;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    color: white;
-    border: 3px solid #1A4687;
-    border-radius: 5px;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.form-buttons{
-    width: 80%;
-    height: 60px;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.form-buttons ul{
-    list-style: none;
-}
-
-.form-buttons li{
+    height: 185px;
     float: left;
-    margin-left: 10%;
+}
+
+.input-elm{
+    width: 100%;
+    height: 40px;
+    background-color: #98C6DD;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: white;
+    border: 3px solid #1A4687;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.right{
+    width: 40%;
+    height: 185px;
+    float: left;
+    text-align: center;
+    padding-left: 5%;
+}
+
+.real-time-cost{
+    height: 160px;
+    background-color: #1A4687;
+    color: white;
+    font-size: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 5px;
+}
+
+.bread-options{
+    width: 25%;
+    height: 300px;
+    float: left;
+    color: #1A4687;
+    padding-left: 1%;
+}
+
+.toppings{
+    width: 40%;
+    height: 300px;
+    float: left;
+    color: #1A4687;
+    padding-left: 1%;
+}
+
+.top-check{
+    width: 50%;
+    float: left;
+}
+
+.sauces{
+    width: 35%;
+    height: 300px;
+    float: left;
+    color: #1A4687;
+    padding-left: 1%;
 }
 
 button{
     width: 250px;
     height: 60px;
-    background-color: #98C6DD;
+    background-color: #1A4687;
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
     font-weight: bold;
-    color: #1A4687;
-    border: 3px solid #1A4687;
+    color: #98C6DD;
+    border: 3px solid #A00A16;
     border-radius: 25px;
 }
 
 button:hover{
-    background-color: #E7D5C7;
+    background-color: #98C6DD;
+    color: #1A4687;
+    border: 3px solid #1A4687;
+}
+
+.build-btn{
+    float: right;
+}
+
+
+
+
+
+.output{
+    width: 80%;
+    height: 100px;
+    background-color: #98C6DD;
+    border: 3px solid #1A4687;
+    border-radius: 5px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+.outHeader h3{
+    float: left;
+    padding-top: 29px;
+}
+
+.totalOrder{
+    float: left;
+    margin-left: 30%;
+}
+
+.totalOrder h3{
+    font-size: 40px;
+    margin-top: -10px;
+}
+
+
+
+
+.checkout-btn{
+    float: right;
+    margin-top: 16px;
+}
+
+.card{
+    width: 29%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 15px;
+    float: left;
+    margin: 2%;
 }
 
 
@@ -491,11 +550,24 @@ button:hover{
 
 .checkout{
     width: 100%;
-    height: 700px;
-    background-color: #E7D5C7;
+    height: 800px;
+    background-color: #A00A16;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-.checkout h2{
+.checkout-form{
+    width: 80%;
+    height: 700px;
+    background-color: #E7D5C7;
+    border-radius: 5px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+.checkout-form h2{
     font-family: 'Oswald', sans-serif;
     font-size: 50px;
     font-weight: bold;
@@ -505,3 +577,80 @@ button:hover{
     padding-bottom: 45px;
 }
 
+
+
+
+
+
+
+
+
+
+.checkout-left{
+    width: 70%;
+    height: 500px;
+    float: left;
+    padding-left: 5%;
+}
+
+.checkout-left h1{
+    margin-top: 10px;
+}
+
+.checkout-left h3{
+    margin: 0;
+    padding: 0;
+}
+
+.checkout-right{
+    width: 30%;
+    height: 500px;
+    float: left;
+    background-color: #98C6DD;
+    border: 3px solid #1A4687;
+    border-radius: 5px;
+    color: white;
+    padding-top: ;
+    text-align: center;
+}
+
+.checkout-right h1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.checkout-right input{
+    width: 80%;
+    height: 40px;
+    background-color: #98C6DD;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: white;
+    border: 3px solid #1A4687;
+    border-radius: 5px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.checkout-right h4{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.checkout-btns{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.discount-btn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.payment-btn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
