@@ -40,8 +40,6 @@ makeSub = () => {
         subTotal = subTotal + 5;
     }
 
-
-
     subOrder.push({
         nameAndSurname: nameAndSurname,
         email: email,

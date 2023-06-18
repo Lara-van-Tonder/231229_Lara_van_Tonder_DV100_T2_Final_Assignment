@@ -33,6 +33,25 @@ displayCheck = () => {
     }
 }
 
+
+
+
+
+addDiscount = () => {
+    let totalOut = document.getElementById("totalOut").value;
+    let discount = document.getElementById("discount").value;
+
+    if(discount === "1234"){
+        totalOut = totalOut - 20;
+    } else if(discount !== ""){
+        totalOut = totalOut;
+    }
+}
+
+
+
+
+
 resetReturn = () => {
     localStorage.removeItem('order');
     window.location.href = '../index.html'
